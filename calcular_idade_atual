@@ -1,0 +1,17 @@
+def calcular_idade_atual ():
+  while(True):
+    try:
+      ano_nascimento = int(input('Digite o ano de seu nascimento: '))
+      if(ano_nascimento < 1922 or ano_nascimento > 2023):
+        print('Ano inválido! Por gentileza, digite um ano entre 1922 e 2023.')
+      else:
+        idade = ano_atual - ano_nascimento
+        print('Olá {}, este ano você completou ou completará {} anos de idade.'.format(nome_completo, idade))
+        break
+    except:
+      print('Caractere inválido! Por favor, digite um número entre 1922 e 2023.')
+
+nome_completo = input('Digite seu nome completo: ')
+ano_atual = 2024
+
+calcular_idade_atual()
